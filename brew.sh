@@ -5,4 +5,4 @@ if [ "$(uname)" != "Darwin" ] ; then
 	exit 1
 fi
 
-brew bundle --file=~/dotfiles/Brewfile
+brew bundle
