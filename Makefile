@@ -27,3 +27,9 @@ brew:
 	@chmod +x brew.sh
 	@./brew.sh
 	@echo "\033[0;32mDone.\033[0m"
+
+# Update all.
+update:
+	@echo "\033[0;34mRun update.sh\033[0m"
+	@brew bundle dump -f
+	@echo "\033[0;32mDone.\033[0m"
