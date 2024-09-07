@@ -5,6 +5,7 @@ tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "kayac/tap"
 tap "ngrok/ngrok"
+tap "rcmdnk/file"
 tap "weaveworks/tap"
 brew "xz"
 brew "argocd"
@@ -24,6 +25,7 @@ brew "helm"
 brew "kubernetes-cli"
 brew "kustomize"
 brew "libfido2"
+brew "mas"
 brew "mysql-client"
 brew "neovim"
 brew "nodebrew"
@@ -42,15 +44,21 @@ brew "wget"
 brew "yarn"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
-brew "ariga/tap/atlas"
+brew "ariga/tap/atlas", link: false
 brew "aws/tap/copilot-cli"
 brew "hashicorp/tap/terraform", link: false
 brew "kayac/tap/ecspresso"
+brew "rcmdnk/file/brew-file"
 brew "weaveworks/tap/eksctl"
 cask "font-daddy-time-mono-nerd-font"
 cask "font-hack-nerd-font"
 cask "google-cloud-sdk"
 cask "ngrok"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 vscode "766b.go-outliner"
 vscode "aaron-bond.better-comments"
 vscode "alefragnani.project-manager"
