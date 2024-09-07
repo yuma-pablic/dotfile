@@ -6,3 +6,7 @@ brew install chezmoi
 chezmoi init https://github.com/yuma-pablic/dotfiles.git
 brew bundle
 ```
+## update
+```
+brew bundle dump -f
+```
