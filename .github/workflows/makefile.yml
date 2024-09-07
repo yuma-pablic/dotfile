@@ -1,27 +1,22 @@
-name: Makefile CI
-
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  make:
+    runs-on: macos-latest
 
-    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: zsh
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
-
-    - name: Install dependencies
-      run: make
-
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
+      - name: Setup Dotfiles
+        run: make
