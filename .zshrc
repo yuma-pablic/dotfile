@@ -22,3 +22,4 @@ prompt pure
 alias tf='terraform'
 alias k=kubectl
 export AWS_PROFILE=administrator
+eval "$(zoxide init zsh)"
