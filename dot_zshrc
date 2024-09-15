@@ -27,7 +27,7 @@ eval "$(starship init zsh)"
 alias tf='terraform'
 alias k=kubectl
 alias c='chezmoi cd'
-alias b='echo hello'
+alias d='echo hello'
 alias ca='chezmoi apply && chezmoi cd && git add . && git commit "fix" && git push origin head && cd ~'
 alias zj='zellij'
 # 過去に実行したコマンドを選択。
