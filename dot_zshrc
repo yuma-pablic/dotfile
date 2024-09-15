@@ -30,7 +30,7 @@ alias c='chezmoi cd'
 alias d='echo hello'
 cedit() {
   read input
-  chezmoi edit "$input"
+  echo "$input"
 }
 alias ce='cedit'
 alias ca='chezmoi apply;  cd ~/.local/share/chezmoi; git add .  ; git commit -m "fix"; git push origin head; cd ~'
