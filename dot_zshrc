@@ -27,7 +27,7 @@ eval "$(starship init zsh)"
 alias tf='terraform'
 alias k=kubectl
 alias c='chezmoi cd'
-
+alias zj='zellij'
 # 過去に実行したコマンドを選択。
 function peco-select-history() {
     =$(\history -n -r 1 | peco --query "$LBUFFER")
@@ -36,3 +36,4 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
